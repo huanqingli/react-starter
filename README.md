@@ -17,16 +17,16 @@
 
 ### 安装
 
-下载项目：
+下载项目：`git clone https://github.com/huanqingli/react-starter.git`  
 安装依赖：`yarn`。  
-删除yarn.lock后安装即为当前最新版本，否则为2017/06/20时的最新版本。
-启动 node 服务：`yarn start`
-启动 webpack 服务：`yarn wds`
+删除 yarn.lock 后安装即为当前最新版本，否则为2017/06/20时的最新版本。  
+启动 node 服务：`yarn start`  
+启动 webpack 服务：`yarn wds`  
 访问 http://localhost:8000/ 即可  
-  
-打包库文件：`yarn dll`
-生产环境打包：`yarn build`
-启动代码格式检查和单元测试：`yarn test`
+
+打包库文件：`yarn dll`  
+生产环境打包：`yarn build`  
+启动代码格式检查和单元测试：`yarn test`  
 
 ### 项目结构
 
@@ -70,10 +70,14 @@
 - HTTP 请求使用 fetch
 - 数据结构统一采用 immutable
 - 全局常量通过 webpack 的 DefinePlugin 插件引入
+- 推荐使用 Redux dev tools 调试，chrome 安装插件即可直接使用
+- 单元测试命名为 [被测文件名].test.js 与被测文件同级目录
 
 ### 文档
 - [webpack](https://github.com/huanqingli/life-note/blob/master/%E5%89%8D%E7%AB%AF/%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7/webpack.md)
-- [lodash快捷查询](https://github.com/huanqingli/life-note/blob/master/%E5%89%8D%E7%AB%AF/%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7/lodash%E5%BF%AB%E6%8D%B7%E6%9F%A5%E8%AF%A2.md)
+- [lodash快捷查询](https://github.com/huanqingli/life-note/blob/master/%E5%89%8D%E7%AB%AF/%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7/lodash%E5%BF%AB%E6%8D%B7%E6%9F%A5%E8%AF%A2.md)[待完成]
 - [CSS变量（自定义属性）](https://github.com/huanqingli/life-note/blob/master/%E5%89%8D%E7%AB%AF/CSS/CSS%E5%8F%98%E9%87%8F%EF%BC%88%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B1%9E%E6%80%A7%EF%BC%89.md)
+- [css-modules](https://github.com/huanqingli/life-note/blob/master/%E5%89%8D%E7%AB%AF/CSS/css-modules.md)
 - [fetch](https://github.com/huanqingli/life-note/blob/master/%E5%89%8D%E7%AB%AF/%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7/fetch.md)
 - [webpack-科学分离第三方库](https://github.com/huanqingli/life-note/blob/master/%E5%8E%9F%E5%88%9B%E6%96%87%E7%AB%A0/%E6%8A%80%E6%9C%AF%E7%B1%BB/webpack-%E7%A7%91%E5%AD%A6%E5%88%86%E7%A6%BB%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93.md)
+- [webpack-热替换](https://github.com/huanqingli/life-note/blob/master/%E5%8E%9F%E5%88%9B%E6%96%87%E7%AB%A0/%E6%8A%80%E6%9C%AF%E7%B1%BB/react-%E7%83%AD%E6%9B%BF%E6%8D%A2.md)
