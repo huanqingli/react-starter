@@ -1,0 +1,52 @@
+{
+  "name": "react-starter",
+  "version": "1.0.0",
+  "description": "start kit for React whole family",
+  "main": "index.js",
+  "author": "li huanqing",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server",
+    "wds": "webpack-dev-server --progress --config ./webpack.config.dev.js",
+    "build": "webpack -p --progress --config ./webpack.config.prod.js",
+    "test": "eslint src && stylelint src/**/*.css && jest --coverage",
+    "dll": "webpack -p --progress --config ./webpack.config.dll.js"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "immutable": "^3.8.1",
+    "lodash": "^4.17.4",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-hot-loader": "next",
+    "react-redux": "^5.0.3",
+    "react-router-dom": "^4.0.0",
+    "redux": "^3.6.0",
+    "redux-persist": "^4.8.0",
+    "redux-persist-transform-immutable": "^4.3.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "babel-core": "^6.24.0",
+    "babel-jest": "^19.0.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.2.2",
+    "babel-preset-react": "^6.23.0",
+    "css-loader": "^0.28.4",
+    "eslint": "^3.18.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "html-webpack-plugin": "^2.28.0",
+    "jest": "^19.0.2",
+    "postcss-loader": "^2.0.5",
+    "style-loader": "^0.18.1",
+    "stylelint": "^7.10.1",
+    "stylelint-config-standard": "^16.0.0",
+    "webpack": "^2.3.2",
+    "webpack-dev-server": "^2.4.2"
+  }
+}

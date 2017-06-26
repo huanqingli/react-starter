@@ -1,0 +1,4 @@
+.testClass {
+    composes: common from '../css/common.css';
+    color: var(--primary-color1);
+}

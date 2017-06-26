@@ -1,0 +1,5 @@
+/*该文件中定义的class用于且仅用于被其他css模块引用,不可在组件中直接使用,*/
+/*全局样式请定义在global.css*/
+.common{
+    color:red
+}

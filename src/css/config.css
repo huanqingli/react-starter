@@ -1,0 +1,6 @@
+/*此文件用于且仅用于定义变量,所有变量应写入此文件,用法如下*/
+/*如果定义某class下局部作用域变量,该class必须位于global.css*/
+:root{
+    --primary-color1:limegreen;
+    --primary-color2:blue;
+}

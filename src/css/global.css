@@ -1,0 +1,16 @@
+/*该文件中为全局样式,只在index.jsx中引用一次,使用方法同常规,class写法如下*/
+/*其他css模块文件请勿引用,公共样式在common.css*/
+:global(.test-style){
+    color:var(--primary-color2);
+    font-size: 24px;
+}
+
+body {
+    width: 960px;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+:fullscreen{
+
+}
