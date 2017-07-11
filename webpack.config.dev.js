@@ -35,6 +35,8 @@ module.exports = {
           }], // 3
         exclude: /node_modules/,
       },
+      //打包图片
+      { test: /\.(png|jpg)$/, use: 'url-loader?limit=8192', exclude: /node_modules/ },
       // { test: /\.css$/, use: ['style-loader', 'css-loader', 'postcss-loader'], exclude: /node_modules/ },
     ],
   },

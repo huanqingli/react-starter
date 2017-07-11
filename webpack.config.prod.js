@@ -27,6 +27,8 @@ module.exports = {
           { loader: 'postcss-loader', options: { plugins: [require('autoprefixer')] } },
         ]),
       },
+      //打包图片
+      { test: /\.(png|jpg)$/, use: 'url-loader?limit=8192', exclude: /node_modules/ },
     ],
   },
   devtool: false, // 报错时追踪到原文件位置
