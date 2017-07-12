@@ -33,6 +33,8 @@
     "babel-loader": "^6.4.1",
     "babel-preset-env": "^1.2.2",
     "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-1": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^0.28.4",
     "eslint": "^3.18.0",
     "eslint-config-airbnb": "^14.1.0",
