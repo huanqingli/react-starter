@@ -14,6 +14,8 @@
   },
   "dependencies": {
     "express": "^4.15.2",
+    "file-loader": "^0.11.2",
+    "img-loader": "^2.0.0",
     "immutable": "^3.8.1",
     "lodash": "^4.17.4",
     "react": "^15.4.2",
@@ -24,7 +26,8 @@
     "redux": "^3.6.0",
     "redux-persist": "^4.8.0",
     "redux-persist-transform-immutable": "^4.3.0",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "url-loader": "^0.5.9"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.1",
@@ -33,6 +36,8 @@
     "babel-loader": "^6.4.1",
     "babel-preset-env": "^1.2.2",
     "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-1": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^0.28.4",
     "eslint": "^3.18.0",
     "eslint-config-airbnb": "^14.1.0",

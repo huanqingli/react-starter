@@ -28,7 +28,26 @@ module.exports = {
         ]),
       },
       //打包图片
-      { test: /\.(png|jpg)$/, use: 'url-loader?limit=8192', exclude: /node_modules/ },
+      {
+        //正则匹配后缀.png、.jpg、.gif图片文件;
+        test: /\.(png|jpg|gif)$/,
+          use: [
+              {
+                //加载url-loader 同时安装 file-loader;
+                loader : 'url-loader',
+                options : {
+                  //小于8K的图片文件转base64内联在代码中，减少http请求;
+                  limit : 8192,
+                  //设置最终img路径;
+                  name : '[name]-[hash].[ext]'
+                }
+              },
+              {
+                //压缩图片(另一个压缩图片：image-webpack-loader);
+                loader : 'img-loader?minimize&optimizationLevel=5&progressive=true'
+              }
+            ]
+      },
     ],
   },
   devtool: false, // 报错时追踪到原文件位置
