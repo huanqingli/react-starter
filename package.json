@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "express": "^4.15.2",
-    "file-loader": "^0.11.2",
     "img-loader": "^2.0.0",
     "immutable": "^3.8.1",
     "lodash": "^4.17.4",
@@ -26,8 +25,7 @@
     "redux": "^3.6.0",
     "redux-persist": "^4.8.0",
     "redux-persist-transform-immutable": "^4.3.0",
-    "redux-thunk": "^2.2.0",
-    "url-loader": "^0.5.9"
+    "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.1",
@@ -45,12 +43,14 @@
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
     "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.2",
     "html-webpack-plugin": "^2.28.0",
     "jest": "^19.0.2",
     "postcss-loader": "^2.0.5",
     "style-loader": "^0.18.1",
     "stylelint": "^7.10.1",
     "stylelint-config-standard": "^16.0.0",
+    "url-loader": "^0.5.9",
     "webpack": "^2.3.2",
     "webpack-dev-server": "^2.4.2"
   }
