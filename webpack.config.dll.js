@@ -6,8 +6,20 @@ const webpack = require('webpack')
 
 module.exports = {
   entry: {
-    vendor: ['react', 'react-dom', 'react-hot-loader', 'immutable', 'redux', 'react-redux', 'react-router-dom',
-      'redux-persist', 'redux-persist-transform-immutable', 'redux-thunk', 'lodash'],
+    vendor: [
+      'react',
+      'react-dom',
+      'react-hot-loader',
+      'immutable',
+      'redux',
+      'react-redux',
+      'react-router-dom',
+      'redux-persist',
+      'redux-persist-transform-immutable',
+      'redux-thunk',
+      'lodash',
+      'history',
+    ],
   },
   output: {
     filename: 'js/[name].js',

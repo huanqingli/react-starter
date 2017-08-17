@@ -6,12 +6,13 @@ import thunkMiddleware from 'redux-thunk'
 import { persistStore, autoRehydrate } from 'redux-persist'
 import { asyncSessionStorage } from 'redux-persist/storages'
 import immutableTransform from 'redux-persist-transform-immutable'
-import { BrowserRouter } from 'react-router-dom'
+import { Router } from 'react-router-dom'
 import { AppContainer } from 'react-hot-loader'
 
 import App from './app'
 import rootReducer from './reducer'
 import { APP_CONTAINER_CLASS } from './config'
+import { LOCATION_CHANGE, history } from './action/router'
 
 import './css/global.css'
 import './css/config.css'
@@ -27,13 +28,25 @@ const store = createStore(
 
 persistStore(store, { storage: asyncSessionStorage, transforms: [immutableTransform()] })
 
+// 链接 history(router) 与 redux
+store.dispatch({
+  type: LOCATION_CHANGE,
+  payload: history.location,
+})
+history.listen((location) => {
+  store.dispatch({
+    type: LOCATION_CHANGE,
+    payload: location,
+  })
+})
+
 const rootEl = document.querySelector(APP_CONTAINER_CLASS)
 
 const wrapApp = RootApp =>
   <Provider store={store}>
-    <BrowserRouter>
+    <Router history={history}>
       <RootApp />
-    </BrowserRouter>
+    </Router>
   </Provider>
 
 const render = (Component) => {
